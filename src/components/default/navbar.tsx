@@ -1,4 +1,4 @@
-import logo from "@/assets/icons/logo.png";
+// import logo from "@/assets/icons/logo.png";
 
 const Navbar: React.FC = () => {
   return (
@@ -6,6 +6,7 @@ const Navbar: React.FC = () => {
       <div className="logo"></div>
       <div className="nav-item"></div>
       <div className="func"></div>
+      <h1>navbar</h1>
     </nav>
   )
 }
