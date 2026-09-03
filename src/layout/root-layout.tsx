@@ -11,7 +11,9 @@ const RootLayout: React.FC = () => {
     <Wrapper>
       <Banner />
       <Navbar />
-      <div>
+      <div 
+      // style={{ paddingLeft: "40px", paddingRight: "40px" }}
+      >
         <Outlet />
       </div>
       <Footer />
