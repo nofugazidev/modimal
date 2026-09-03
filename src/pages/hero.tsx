@@ -1,12 +1,14 @@
 import React from "react";
 import hero from "@/assets/images/hero.png";
 import styled from "styled-components";
+import Button from "@/components/common/button";
 
 const Hero: React.FC = () => {
   return (
     <Wrapper>
       <p>elegance in simplicity</p>
       <p>earth's harmony</p>
+      <Button value="new in" />
     </Wrapper>
   );
 };
