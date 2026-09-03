@@ -5,7 +5,7 @@ import Hero from './hero'
 const Home: React.FC = () => {
   return (
     <div>
-      
+      <Hero />
     </div>
   )
 }
