@@ -1,11 +1,12 @@
 import React from 'react'
-import Banner from './banner'
 import Hero from './hero'
+import BestSeller from './best-seller'
 
 const Home: React.FC = () => {
   return (
     <div>
       <Hero />
+      <BestSeller />
     </div>
   )
 }

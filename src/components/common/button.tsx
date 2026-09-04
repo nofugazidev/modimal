@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { colors } from '@/constants/colors';
 
 interface ButtonProps {
-    value: string;
+    value: string | undefined;
 }
 
 const Button: React.FC<ButtonProps> = ({value}) => {
@@ -24,4 +24,5 @@ const Wrapper = styled.button`
     border: none;
     padding: 8px 67px;
     text-transform: capitalize;
+    cursor: pointer;
 `

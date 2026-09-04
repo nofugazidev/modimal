@@ -2,6 +2,7 @@ import React from "react";
 import hero from "@/assets/images/hero.png";
 import styled from "styled-components";
 import Button from "@/components/common/button";
+import { colors } from "@/constants/colors";
 
 const Hero: React.FC = () => {
   return (
@@ -24,7 +25,16 @@ const Wrapper = styled.div`
   min-height: 700px;
   padding: 140px 40px;
   display: flex;
+  gap: 10px;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+
+  p {
+    color: ${colors.black};
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-style: italic;
+  }
 `;
