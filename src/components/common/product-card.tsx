@@ -39,8 +39,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          minHeight: "400px",
-          minWidth: "320px",
+          minHeight: "438px",
+          minWidth: "438px",
         }}
       >
         {tag && <div>{tag}</div>}
@@ -88,6 +88,7 @@ const Wrapper = styled.div`
     }
     & > img {
       margin-left: auto;
+      cursor: pointer;
     }
   }
 
@@ -98,6 +99,7 @@ const Wrapper = styled.div`
 
     p {
       font-weight: 600;
+      text-transform: capitalize;
     }
 
     .det-text {
@@ -109,6 +111,7 @@ const Wrapper = styled.div`
       small {
         font-size: 16px;
         font-weight: 400;
+        text-transform: capitalize;
       }
     }
 
