@@ -39,8 +39,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          minHeight: "438px",
-          minWidth: "438px",
+          minHeight: "500px",
+          minWidth: "400px",
         }}
       >
         {tag && <div>{tag}</div>}

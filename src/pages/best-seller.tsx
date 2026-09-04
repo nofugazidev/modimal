@@ -15,7 +15,7 @@ const BestSeller: React.FC = () => {
       detail: "turn it up pants",
       price: 180,
       image: bestone,
-      colors: ["#E8DCC4", "#1C2434", "#FFFFFF"],
+      colors: ["#000000", "#7DC3EB", "#748c70"],
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const BestSeller: React.FC = () => {
       detail: "make a splash",
       price: 120,
       image: besttwo,
-      colors: ["#8B0000", "#000000", "#1C2434"],
+      colors: ["#909225", "#19418E", "#000000"],
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const BestSeller: React.FC = () => {
       detail: "anywhere dress",
       price: 210,
       image: bestthree,
-      colors: ["#F5F5DC", "#708090", "#333333"],
+      colors: ["#D0A5EA", "#909225", "#748c70"],
     },
   ];
 
@@ -50,7 +50,6 @@ const BestSeller: React.FC = () => {
             name={product.name}
             detail={product.detail}
             price={product.price}
-            tag={product.tag}
             image={product.image}
             colors={product.colors}
           />
