@@ -44,16 +44,16 @@ const BestSeller: React.FC = () => {
         </Link>
       </header>
       <ProductWrapper>
-        {sampleProducts.map((product) => (
-          <ProductCard
-            key={product.id}
-            name={product.name}
-            detail={product.detail}
-            price={product.price}
-            image={product.image}
-            colors={product.colors}
-          />
-        ))}
+          {sampleProducts.map((product) => (
+            <ProductCard
+              key={product.id}
+              name={product.name}
+              detail={product.detail}
+              price={product.price}
+              image={product.image}
+              colors={product.colors}
+            />
+          ))}
       </ProductWrapper>
     </Wrapper>
   );
