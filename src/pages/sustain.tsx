@@ -22,9 +22,9 @@ const Wrapper = styled.div`
   background: url(${sustain});
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   padding: 140px 40px;
   display: flex;
   gap: 10px;

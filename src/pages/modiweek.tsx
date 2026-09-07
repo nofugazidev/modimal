@@ -55,7 +55,7 @@ const Wrapper = styled.div`
     color: ${colors.black};
     font-weight: 500;
     text-transform: capitalize;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
   }
 `;
 const Carousel = styled(ScrollContainer)`

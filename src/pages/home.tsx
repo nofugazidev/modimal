@@ -4,6 +4,7 @@ import BestSeller from './best-seller'
 import Collection from './collection'
 import ModiWeek from './modiweek'
 import Sustain from './sustain'
+import Showcase from './showcase'
 
 const Home: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
       <Collection />
       <ModiWeek />
       <Sustain />
+      <Showcase />
     </div>
   )
 }

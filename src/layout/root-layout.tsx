@@ -11,11 +11,7 @@ const RootLayout: React.FC = () => {
     <Wrapper>
       <Banner />
       <Navbar />
-      <div 
-      // style={{ paddingLeft: "40px", paddingRight: "40px" }}
-      >
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
     </Wrapper>
   );
@@ -26,6 +22,5 @@ export default RootLayout;
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
 `;
