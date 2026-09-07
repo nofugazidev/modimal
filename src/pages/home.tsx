@@ -3,6 +3,7 @@ import Hero from './hero'
 import BestSeller from './best-seller'
 import Collection from './collection'
 import ModiWeek from './modiweek'
+import Sustain from './sustain'
 
 const Home: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
       <BestSeller />
       <Collection />
       <ModiWeek />
+      <Sustain />
     </div>
   )
 }
