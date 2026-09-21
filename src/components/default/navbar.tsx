@@ -197,9 +197,23 @@ const Navbar: React.FC = () => {
 
       {/* nav icons for other func */}
       <NavFuncIcons>
-        <Icon>
-          <img src={search} alt="search-icon" />
-        </Icon>
+        <div className="search">
+          <DropdownContainer>
+            <Icon>
+              <img src={search} alt="search-icon" />
+            </Icon>
+
+            <DropdownBox>
+              <div className="search-input">
+                <img src={search} alt="search-icon" />
+                <input type="search" name="" id="" />
+              </div>
+
+              <div className="results"></div>
+            </DropdownBox>
+          </DropdownContainer>
+        </div>
+
         <Icon>
           <img src={user} alt="user-icon" />
         </Icon>
@@ -216,7 +230,6 @@ const Navbar: React.FC = () => {
 
 export default Navbar;
 
-
 const StyledNavbar = styled.nav`
   background-color: #ffffff;
   display: flex;
@@ -224,7 +237,7 @@ const StyledNavbar = styled.nav`
   align-items: center;
   padding: 0 40px;
   height: 80px;
-  position: static; 
+  position: static;
   z-index: 1000;
 
   .navlinks {
@@ -267,16 +280,18 @@ const DropdownBox = styled.div`
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  
+
   display: flex;
   justify-content: space-between;
   padding: 40px 60px 60px 60px;
   background-color: #ffffff;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.03);
-  
+
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
   z-index: 999;
 
   .collection-items {
@@ -285,7 +300,10 @@ const DropdownBox = styled.div`
     flex: 1;
   }
 
-  .categories, .featured, .more, .trending {
+  .categories,
+  .featured,
+  .more,
+  .trending {
     display: flex;
     flex-direction: column;
     min-width: 140px;
@@ -314,14 +332,14 @@ const DropdownBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Aligns text left below the image matching your blueprint */
-    
+
     img {
       width: 240px; /* Large matching photo proportions */
       height: 320px;
       object-fit: cover;
       background-color: #f7f7f7;
     }
-    
+
     p {
       margin-top: 12px;
       font-size: 14px;
@@ -338,7 +356,7 @@ const DropdownItem = styled(Link)`
   text-transform: capitalize;
   white-space: nowrap;
   transition: color 0.15s ease;
-  
+
   &:hover {
     color: #888888; /* Subtle link tracking effect */
   }
@@ -348,13 +366,36 @@ const NavFuncIcons = styled.div`
   display: flex;
   gap: 20px;
   align-items: center;
+
+  .search {
+    .search-input {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      border-bottom: 2px solid #9b8d8dab;
+      padding: 10px 20px;
+
+      & > img {
+        color: ${colors.lightGray};
+      }
+
+      input[type="search"] {
+        border: none;
+        outline: none;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+      }
+    }
+  }
 `;
 
 const Icon = styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
-  
+
   img {
     width: 20px;
     height: 20px;
