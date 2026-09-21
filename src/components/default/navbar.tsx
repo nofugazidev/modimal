@@ -206,7 +206,12 @@ const Navbar: React.FC = () => {
             <DropdownBox>
               <div className="search-input">
                 <img src={search} alt="search-icon" />
-                <input type="search" name="" id="" />
+                <input
+                  type="search"
+                  name=""
+                  id=""
+                  placeholder="Search Product"
+                />
               </div>
 
               <div className="results"></div>
@@ -215,7 +220,9 @@ const Navbar: React.FC = () => {
         </div>
 
         <Icon>
-          <img src={user} alt="user-icon" />
+          <Link to="/register">
+            <img src={user} alt="user-icon" />
+          </Link>
         </Icon>
         <Icon>
           <img src={heart} alt="heart-icon" />
